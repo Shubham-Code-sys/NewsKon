@@ -2,6 +2,28 @@
     margin: 0px;
     padding: 0px;
 }
+
+/* image preview */
+.image-preview{
+    width: 250px;
+    min-height: 100px;
+    border: 2px solid #dddddd;
+    margin-top: 5px;
+    /* Default Text */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #cccccc;
+}
+.image-preview__image{
+    display: none;
+    width: 100%;
+}
+.image-input{
+    margin-right: -25px;
+}
+
 /* The side navigation menu */
 .sidenav {
     height: 100%;                       /* 100% Full-height */
@@ -10,7 +32,7 @@
     z-index: 1;                         /* Stay on top */
     top: 0;
     left: 0;
-    background-color: #111;           /* Black*/
+    background-color: #333333;           /* Black*/
     overflow-x: hidden;                 /* Disable horizontal scroll */
     padding-top: 60px;                  /* Place content 60px from the top */
     transition: 0.5s;                   /* 0.5 second transition effect to slide in the sidenav */
@@ -28,7 +50,7 @@
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
-    color: blueviolet;
+    color: white;
 }
 
 /* Position and style the close button (top right corner) */
@@ -60,4 +82,28 @@
 /* note editor css start */
 .note-editor{
     width: auto;
+}
+
+/* submit button */
+.submit-btn{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* display: inline-block; */
+}
+.submit-btn a{
+    display: inline-block;
+    color: #818181;
+    border: 2px solid #818181;
+    margin: 10px;
+    padding: 7px 15px;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 25px;
+}
+.submit-btn a:hover{
+    color: #fff;
+    border: 2px solid #818181;
+    background-color: #818181;
 }

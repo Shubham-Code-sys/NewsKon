@@ -22,21 +22,28 @@
     <!-- Use any element to open the sidenav -->
     <!-- <span onclick="openNav()">Company Name</span> -->
 
-    <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+    <!-- Add all page content inside this div if you want the side nav to push page content to the right
+        (not used if you only want the sidenav to sit on top of the page -->
     <div id="main">
         <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; News-Kon</span>
         <p>Heading of your post : </p>
         <textarea name="news_heading" id="input\u\1" class="form-control" rows="1" required="required" placeholder="Heading"></textarea><br>
         <form action="/action_page.php">
             <label for="myfile">Select files:</label>
-            <input type="file" id="myfile" name="myfile" multiple><br><br>
+            <input type="file" id="inpfile" name="inpfile" class="image-input" multiple>
+            <div class="image-preview" id="imagePreview">
+                <img src="" alt="Image Preview" class="image-preview__image">
+                <span class="image-preview__default-text">Image Preview</span>
+            </div>
+            <br><br>
         </form>
 
         <!-- //side nav end// -->
 
         <!-- //summernote related code start// -->
         <div id="summernote"></div>
-
+        <div class="submit-btn"><a href="">Let's Go</a></div>
+        
     </div>
     <!-- //main content end// -->
 
@@ -56,7 +63,7 @@
         $('#summernote').summernote({
         placeholder: 'Write your main content here...',
         tabsize: 1,
-        height: 200,
+        height: 150,
       });
     </script>
 </body>

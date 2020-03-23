@@ -6,17 +6,19 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.16/dist/summernote-bs4.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <title>News-Kon</title>
 </head>
-<body>
+<body class="body">
     <!-- //side nav start// -->
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">Item 1</a>
-        <a href="#">Item 2</a>
-        <a href="#">Item 3</a>
-        <a href="#">Item 4</a>
+        <img src="background-img.png" alt="Snow" style="width:150px;height:150px;margin-left:20%;border-radius:50%;">
+        <a href="#home" class="menu-items"><i class="fa fa-fw fa-home"></i> Home</a>
+        <a href="#services" class="menu-items"><i class="fa fa-fw fa-wrench"></i> Services</a>
+        <a href="#clients" class="menu-items"><i class="fa fa-fw fa-user"></i> Clients</a>
+        <a href="#contact" class="menu-items"><i class="fa fa-fw fa-envelope"></i> Contact</a>
     </div>
 
     <!-- Use any element to open the sidenav -->
@@ -26,11 +28,11 @@
         (not used if you only want the sidenav to sit on top of the page -->
     <div id="main">
         <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; News-Kon</span>
-        <p>Heading of your post : </p>
+        <p class="font-weight-bold">Heading of your post : </p>
         <textarea name="news_heading" id="input\u\1" class="form-control" rows="1" required="required" placeholder="Heading"></textarea><br>
         <form action="/action_page.php">
-            <label for="myfile">Select files:</label>
-            <input type="file" id="inpfile" name="inpfile" class="image-input" multiple>
+            <label for="myfile" class="font-weight-bold">Select files:</label>
+            <input type="file" id="inpfile" name="inpfile" class="image-input font-weight-bold" multiple>
             <div class="image-preview" id="imagePreview">
                 <img src="" alt="Image Preview" class="image-preview__image">
                 <span class="image-preview__default-text">Image Preview</span>

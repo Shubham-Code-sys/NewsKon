@@ -38,3 +38,12 @@ inpFile.addEventListener("change", function() {
         previewImage.setAttribute("src", "");
     }
 });
+
+//radio buttons
+var items = ["For You","Trending", "Local", "National", "International", "Sports", "Entertainment", "Health", "Financial", "Economy", "Tech", "Education"];
+var items_group = document.getElementById("items-group");
+var items_html = "";
+for(var i=0;i<items.length;i++){
+    items_html = items_html + "<input type = \"radio\" id=\"category\" name=\"category\" class =\"col-md-1 col-2 text-nowrap radio\">" +"<span class=\"col-md-3 col-10 radio\">" +items[i]+ "</span>";
+}
+items_group.innerHTML =items_html;
